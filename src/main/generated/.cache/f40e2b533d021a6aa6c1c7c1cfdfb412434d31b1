@@ -1,12 +1,12 @@
-// 1.21.1	2025-08-31T11:46:02.7627328	Pixale's Ores/Model Definitions
+// 1.21.1	2025-08-31T17:11:12.1623885	Pixale's Ores/Model Definitions
 40e6ad53246d876e57fd02c7e378e3f552aea71b assets\pixaleores\blockstates\aluminum_block.json
 32be46724ae22851af5cff531b2fde0b65818234 assets\pixaleores\models\item\aluminum_ingot.json
 7bd148cd75c540a0e90a3a8ec356aa8192a7fcfc assets\pixaleores\models\block\aluminum_block.json
 776119db8569d9fcbb684bccc14cd2a63720d4d1 assets\pixaleores\models\item\aluminum_block.json
 7cbc21b655cff43fe30e8f271963b0ef93d8117b assets\pixaleores\models\item\raw_aluminum.json
 c96ab9e82b2299a1968abfec1ead27de7f8ad7d0 assets\pixaleores\blockstates\bauxite.json
-2933cd2e7fd8c9adc4aa685554836a0db72aa7a7 assets\pixaleores\models\item\gallium_ingot.json
 1ece977f7be390fad0e290be8ba53342b8d77235 assets\pixaleores\models\item\bauxite.json
+2933cd2e7fd8c9adc4aa685554836a0db72aa7a7 assets\pixaleores\models\item\gallium_ingot.json
 6d68b2a5bad377a3a92626fcb8f4b94c4e8c7ba9 assets\pixaleores\models\item\aluminum_nugget.json
 93338435e2f186d6b18cb468378ccf9210fa41c7 assets\pixaleores\models\item\raw_gallium.json
 9ecba35645171667dd7d06e54f8241500265b297 assets\pixaleores\models\block\bauxite.json
