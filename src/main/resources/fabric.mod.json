@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "pixaleores",
+	"version": "${version}",
+	"name": "Pixale's Ores",
+	"description": "Added some real life ores and alloys",
+	"authors": [
+		"Pixale"
+	],
+	"contact": {
+		"homepage": "WIP",
+		"sources": "Not Yet"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pixaleores/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pixale.ores.PixalesOres"
+		],
+		"fabric-datagen": [
+			"pixale.ores.PixalesOresDataGenerator"
+		]
+	},
+	"mixins": [
+		"pixaleores.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"alloyforgery": "*",
+		"create": "0.5j"
+	}
+}
