@@ -21,6 +21,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import pixale.ores.PixalesOres;
+import pixale.ores.util.PixaleArmorMaterials;
 import pixale.ores.util.PixaleToolMaterials;
 
 import java.util.EnumMap;
@@ -43,6 +44,14 @@ public class Chromium {
     public static final Item CHROMIUM_HOE = registerItem("chromium_hoe", new HoeItem(PixaleToolMaterials.CHROMIUM,
             new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(PixaleToolMaterials.CHROMIUM, 0, 0F))));
 
+    public static final Item CHROMIUM_HELMET = registerItem("chromium_helmet", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
+            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
+    public static final Item CHROMIUM_LEGGINGS = registerItem("chromium_leggings", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
+            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(22))));
+    public static final Item CHROMIUM_CHESTPLATE = registerItem("chromium_chestplate", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
+    public static final Item CHROMIUM_BOOTS = registerItem("chromium_helmet", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
 
 
 
@@ -74,6 +83,11 @@ public class Chromium {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
 
             entries.add(CHROMIUM_SWORD);
+
+            entries.add(CHROMIUM_HELMET);
+            entries.add(CHROMIUM_LEGGINGS);
+            entries.add(CHROMIUM_CHESTPLATE);
+            entries.add(CHROMIUM_BOOTS);
 
         });
 

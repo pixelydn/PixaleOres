@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "WIP",
-		"sources": "Not Yet"
+		"sources": "https://github.com/pixelydn/PixaleOres"
 	},
 	"license": "MIT",
 	"icon": "assets/pixaleores/icon.png",
@@ -33,6 +33,7 @@
 	},
 	"suggests": {
 		"alloyforgery": "*",
-		"create": "0.5j"
+		"create": "0.5j",
+		"miapi": "2.1.1"
 	}
 }

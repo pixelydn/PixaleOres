@@ -29,6 +29,7 @@ public class ModelProvider extends FabricModelProvider {
         //itemModelGenerator.register(Chromium.CHROMIUM_SHOVEL, Models.HANDHELD);
         //itemModelGenerator.register(Chromium.CHROMIUM_AXE, Models.HANDHELD);
         //itemModelGenerator.register(Chromium.CHROMIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(Chromium.CHROMIUM_HELMET, Models.GENERATED);
 
 
     }
