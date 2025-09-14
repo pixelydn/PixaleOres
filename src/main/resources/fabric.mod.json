@@ -11,7 +11,7 @@
 		"homepage": "WIP",
 		"sources": "Not Yet"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/pixaleores/icon.png",
 	"environment": "*",
 	"entrypoints": {

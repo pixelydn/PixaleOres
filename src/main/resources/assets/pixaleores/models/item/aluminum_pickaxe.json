@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "pixaleores:item/aluminum/aluminum_pickaxe"
+  }
+}

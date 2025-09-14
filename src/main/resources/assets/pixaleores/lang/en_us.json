@@ -1,17 +1,10 @@
 {
-  "item.pixaleores.aluminum_ingot": "Aluminum Ingot",
-  "item.pixaleores.raw_aluminum": "Raw Aluminum",
-  "item.pixaleores.aluminum_nugget": "Aluminum Nugget",
-  "block.pixaleores.aluminum_block": "Aluminum Block",
-  "item.pixaleores.oxidized_aluminum_ingot": "Aluminum Ingot",
-  "item.pixaleores.raw_oxidized_aluminum": "Raw Aluminum",
-  "item.pixaleores.oxidized_aluminum_nugget": "Aluminum Nugget",
-  "block.pixaleores.oxidized_aluminum_block": "Aluminum Block",
-  "item.pixaleores.gallium_ingot": "Gallium Ingot",
-  "item.pixaleores.raw_gallium": "Raw Gallium",
-  "block.pixaleores.bauxite": "Bauxite"
+  "item.pixaleores.chromium_ingot": "Chromium Ingot",
 
 
-
-
+  "item.pixaleores.chromium_sword": "Chromium Sword",
+  "item.pixaleores.chromium_axe": "Chromium Axe",
+  "item.pixaleores.chromium_pickaxe": "Chromium Pickaxe",
+  "item.pixaleores.chromium_shovel": "Chromium Shovel",
+  "item.pixaleores.chromium_hoe": "Chromium Hoe"
 }

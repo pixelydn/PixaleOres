@@ -1,0 +1,91 @@
+{
+  "mining_speed": 7.5,
+  "hardness": 5.0,
+  "flexibility": 2,
+  "density": 2.5,
+  "tier": 3.0,
+  "durability": 1145.0,
+  "axe_damage": -1.5,
+  "enchantability": 11.0,
+  "translation": "Chromium",
+  "color": "fffffffffe97a2b",
+  "items": [
+    {
+      "item": "pixaleores:chromium_ingot",
+      "value": 1.0
+    }
+  ],
+  "generate_converters": [
+    "pixaleores:chromium_sword",
+    "pixaleores:chromium_axe",
+    "pixaleores:chromium_pickaxe",
+    "pixaleores:chromium_shovel",
+    "pixaleores:chromium_hoe"
+  ],
+  "mining_level": "minecraft:incorrect_for_diamond_tool",
+  "groups": [
+    "metal"
+  ],
+  "properties": {
+    "blade": {
+      "miapi:attributes": {
+        "generic.attack_speed": {
+          "add_value": {
+            "mainhand": [
+              {
+                "operation": "+",
+                "value": "0.4"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "axe": {
+      "miapi:attributes": {
+        "generic.attack_speed": {
+          "add_value": {
+            "mainhand": [
+              {
+                "operation": "+",
+                "value": "0.5"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "hoe": {
+      "miapi:attributes": {
+        "generic.attack_damage": {
+          "add_value": {
+            "mainhand": [
+              {
+                "operation": "+",
+                "value": "1.0"
+              }
+            ]
+          }
+        },
+        "generic.attack_speed": {
+          "add_value": {
+            "mainhand": [
+              {
+                "operation": "+",
+                "value": "1.0"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "icon": {
+    "type": "item",
+    "item": "pixaleores:chromium_ingot"
+  },
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "pixaleores:chromium_ingot"
+  }
+}
