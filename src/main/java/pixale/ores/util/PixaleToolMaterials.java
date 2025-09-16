@@ -6,8 +6,6 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
-import pixale.ores.ores.Aluminum;
-import pixale.ores.ores.Aluminum;
 import pixale.ores.ores.Chromium;
 
 import java.util.function.Supplier;
@@ -15,8 +13,8 @@ import java.util.function.Supplier;
 public enum PixaleToolMaterials implements ToolMaterial {
 
 
-    CHROMIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT)),
-    ALUMINUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Aluminum.ALUMINUM_INGOT));
+    CHROMIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT));
+    //ALUMINUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Aluminum.ALUMINUM_INGOT));
 
 
 
@@ -28,6 +26,7 @@ public enum PixaleToolMaterials implements ToolMaterial {
     private final float attackDamage;
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
+    
 
     private PixaleToolMaterials(
             final TagKey<Block> inverseTag,

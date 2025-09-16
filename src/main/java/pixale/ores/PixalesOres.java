@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pixale.ores.ores.Aluminum;
 import pixale.ores.ores.Chromium;
 
 public class PixalesOres implements ModInitializer {
@@ -18,7 +17,6 @@ public class PixalesOres implements ModInitializer {
 		LOGGER.info("Yo wassup");
 
 		Chromium.registerChromium();
-		Aluminum.registerAluminum();
 
 	}
 }

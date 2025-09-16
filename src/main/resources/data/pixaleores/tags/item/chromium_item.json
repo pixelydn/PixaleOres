@@ -1,10 +1,15 @@
 {
   "values": [
     "chromium_ingot",
+    "raw_chromium",
     "chromium_sword",
     "chromium_axe",
     "chromium_pickaxe",
     "chromium_shovel",
-    "chromium_hoe"
+    "chromium_hoe",
+    "chromium_helmet",
+    "chromium_chestplate",
+    "chromium_leggings",
+    "chromium_boots"
   ]
 }

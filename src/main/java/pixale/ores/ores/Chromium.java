@@ -32,6 +32,10 @@ public class Chromium {
 
 
     public static final Item CHROMIUM_INGOT = registerItem("chromium_ingot", new Item(new Item.Settings()));
+    public static final Item RAW_CHROMIUM = registerItem("raw_chromium", new Item(new Item.Settings()));
+    //public static final Item CHROMIUM_NUGGET = registerItem("chromium_nugget", new Item(new Item.Settings()));
+    //public static final Item CHROMIUM_BLOCK = registerItem("chromium_block", new Item(new Item.Settings()));
+
 
     public static final Item CHROMIUM_SWORD = registerItem("chromium_sword", new SwordItem(PixaleToolMaterials.CHROMIUM,
             new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(PixaleToolMaterials.CHROMIUM, 4, -2.0F))));
@@ -49,9 +53,9 @@ public class Chromium {
     public static final Item CHROMIUM_LEGGINGS = registerItem("chromium_leggings", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
             ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(22))));
     public static final Item CHROMIUM_CHESTPLATE = registerItem("chromium_chestplate", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
-            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
-    public static final Item CHROMIUM_BOOTS = registerItem("chromium_helmet", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
-            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(22))));
+    public static final Item CHROMIUM_BOOTS = registerItem("chromium_boots", new ArmorItem(PixaleArmorMaterials.CHROMIUM,
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(22))));
 
 
 
@@ -77,6 +81,8 @@ public class Chromium {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CHROMIUM_INGOT);
+            entries.add(RAW_CHROMIUM);
+
 
         });
 
@@ -122,52 +128,5 @@ public class Chromium {
         }
     }
 
-    /*public static class ChromiumTags extends FabricTagProvider.ItemTagProvider {
 
-
-        public ChromiumTags(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
-            super(output, completableFuture);
-        }
-
-        @Override
-        protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-
-            getOrCreateTagBuilder(net.minecraft.registry.tag.ItemTags.SWORDS)
-                    .add(Chromium.CHROMIUM_SWORD);
-            getOrCreateTagBuilder(net.minecraft.registry.tag.ItemTags.PICKAXES)
-                    .add(Chromium.CHROMIUM_PICKAXE);
-            getOrCreateTagBuilder(net.minecraft.registry.tag.ItemTags.SHOVELS)
-                    .add(Chromium.CHROMIUM_SHOVEL);
-            getOrCreateTagBuilder(net.minecraft.registry.tag.ItemTags.AXES)
-                    .add(Chromium.CHROMIUM_AXE);
-            getOrCreateTagBuilder(net.minecraft.registry.tag.ItemTags.HOES)
-                    .add(Chromium.CHROMIUM_HOE);
-        }
-
-
-
-    }
-
-    public static class ChromiumModelProvider extends FabricModelProvider {
-
-        public ChromiumModelProvider(FabricDataOutput output) {
-            super(output);
-        }
-
-        @Override
-        public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
-        }
-
-        @Override
-        public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
-            itemModelGenerator.register(Chromium.CHROMIUM_SWORD, Models.HANDHELD);
-            itemModelGenerator.register(Chromium.CHROMIUM_PICKAXE, Models.HANDHELD);
-            itemModelGenerator.register(Chromium.CHROMIUM_SHOVEL, Models.HANDHELD);
-            itemModelGenerator.register(Chromium.CHROMIUM_AXE, Models.HANDHELD);
-            itemModelGenerator.register(Chromium.CHROMIUM_HOE, Models.HANDHELD);
-
-        }
-    }*/
 }
