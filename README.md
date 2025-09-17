@@ -6,7 +6,7 @@
 |Attack Speed|
 |Mining Level|
 |Tool Durability|
-|Armor Durability Multiplier|
+|Armor Durability x|
 |Tier|
 |Enchantability|
 
