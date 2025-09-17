@@ -1,5 +1,5 @@
-|Metal|Aluminum|Chromium|
-|-----|--------|--------|
+|Metal|Aluminum|Oxidized Aluminum|Be|Chromium|
+|-----|--------|-----------------|--------|-----
 |Hardness|
 |Density|
 |Flexibility|
@@ -7,3 +7,6 @@
 |Mining Level|
 |Tool Durability|
 |Armor Durability Multiplier|
+|Tier|
+|Enchantability|
+
