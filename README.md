@@ -1,5 +1,5 @@
 |Metal|Aluminum|Beryllium Copper|Chromium|Oxidized Aluminum|Titanium|Uranium|
-|-----|--------|----------------|--------|-----------------|--------|-------|
+|-----|:------:|:--------------:|:------:|:---------------:|:------:|:-----:|
 |Hardness|
 |Density|
 |Flexibility|
