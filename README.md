@@ -8,5 +8,5 @@
 |Tool Durability|
 |Armor Dura. Lv.|
 |Tier|
-|Enchantability|
+|Enchantability|||11|
 
