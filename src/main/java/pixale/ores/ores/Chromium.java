@@ -138,6 +138,9 @@ public class Chromium {
         @Override
         public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
+            //blockStateModelGenerator.registerSimpleCubeAll(CHROMIUM_BLOCK);
+            //blockStateModelGenerator.registerSimpleCubeAll(RAW_CHROMIUM_BLOCK);
+
 
         }
 
@@ -158,6 +161,8 @@ public class Chromium {
 
             itemModelGenerator.register(CHROMIUM_INGOT, Models.GENERATED);
             itemModelGenerator.register(RAW_CHROMIUM, Models.GENERATED);
+            //itemModelGenerator.register(CHROMIUM_NUGGET, Models.GENERATED);
+
 
 
 
