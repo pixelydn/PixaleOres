@@ -150,7 +150,7 @@ public class Chromium {
             itemModelGenerator.register(CHROMIUM_PICKAXE, Models.HANDHELD);
             itemModelGenerator.register(CHROMIUM_SHOVEL, Models.HANDHELD);
             itemModelGenerator.register(CHROMIUM_HOE, Models.HANDHELD);
-            
+
             itemModelGenerator.register(CHROMIUM_HELMET, Models.GENERATED);
             itemModelGenerator.register(CHROMIUM_CHESTPLATE, Models.GENERATED);
             itemModelGenerator.register(CHROMIUM_LEGGINGS, Models.GENERATED);
