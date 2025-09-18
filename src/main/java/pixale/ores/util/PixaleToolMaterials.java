@@ -13,8 +13,9 @@ import java.util.function.Supplier;
 public enum PixaleToolMaterials implements ToolMaterial {
 
 
-    CHROMIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT));
-    //ALUMINUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Aluminum.ALUMINUM_INGOT));
+    CHROMIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT)),
+    //ALUMINUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Aluminum.ALUMINUM_INGOT)),
+    URANIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT));
 
 
 

@@ -128,5 +128,41 @@ public class Chromium {
         }
     }
 
+    public static class ModelProvider extends FabricModelProvider {
+
+
+        public ModelProvider(FabricDataOutput output) {
+            super(output);
+        }
+
+        @Override
+        public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
+
+        }
+
+        @Override
+        public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+
+            itemModelGenerator.register(CHROMIUM_SWORD, Models.HANDHELD);
+            itemModelGenerator.register(CHROMIUM_AXE, Models.HANDHELD);
+            itemModelGenerator.register(CHROMIUM_PICKAXE, Models.HANDHELD);
+            itemModelGenerator.register(CHROMIUM_SHOVEL, Models.HANDHELD);
+            itemModelGenerator.register(CHROMIUM_HOE, Models.HANDHELD);
+            
+            itemModelGenerator.register(CHROMIUM_HELMET, Models.GENERATED);
+            itemModelGenerator.register(CHROMIUM_CHESTPLATE, Models.GENERATED);
+            itemModelGenerator.register(CHROMIUM_LEGGINGS, Models.GENERATED);
+            itemModelGenerator.register(CHROMIUM_BOOTS, Models.GENERATED);
+
+            itemModelGenerator.register(CHROMIUM_INGOT, Models.GENERATED);
+            itemModelGenerator.register(RAW_CHROMIUM, Models.GENERATED);
+
+
+
+        }
+    }
+
 
 }

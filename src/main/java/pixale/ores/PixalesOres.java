@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pixale.ores.ores.Chromium;
+import pixale.ores.ores.Uranium;
 import pixale.ores.ores.armor.effects.ChromiumArmorEffect;
 
 public class PixalesOres implements ModInitializer {
@@ -19,6 +20,7 @@ public class PixalesOres implements ModInitializer {
 
 		Chromium.registerChromium();
 		ChromiumArmorEffect.register();
+		Uranium.registerUranium();
 
 	}
 }
