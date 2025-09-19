@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import pixale.ores.PixalesOres;
 import pixale.ores.ores.Chromium;
+import pixale.ores.ores.Titanium;
 import pixale.ores.ores.Uranium;
 
 import java.util.EnumMap;
@@ -50,6 +51,21 @@ public class PixaleArmorMaterials {
                     SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Uranium.URANIUM_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(PixalesOres.MOD_ID, "uranium"))),
                     2.5F,0
+            )
+    );
+    public static final RegistryEntry<ArmorMaterial> TITANIUM = registerArmorMaterial(
+            "titanium",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class),map ->{
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 6);
+
+            }),11,
+                    SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Titanium.TITANIUM_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PixalesOres.MOD_ID, "titanium"))),
+                    5F,0
             )
     );
 

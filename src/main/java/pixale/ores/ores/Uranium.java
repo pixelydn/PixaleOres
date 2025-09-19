@@ -1,7 +1,12 @@
 package pixale.ores.ores;
 
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -109,6 +114,47 @@ public class Uranium {
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(PixalesOres.MOD_ID, name));
+        }
+    }
+
+    public static class ModelProvider extends FabricModelProvider {
+
+
+        public ModelProvider(FabricDataOutput output) {
+            super(output);
+        }
+
+        @Override
+        public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
+            //blockStateModelGenerator.registerSimpleCubeAll(URANIUM_BLOCK);
+            //blockStateModelGenerator.registerSimpleCubeAll(RAW_URANIUM_BLOCK);
+
+
+        }
+
+        @Override
+        public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+
+            itemModelGenerator.register(URANIUM_SWORD, Models.HANDHELD.create());
+            itemModelGenerator.register(URANIUM_AXE, Models.HANDHELD);
+            itemModelGenerator.register(URANIUM_PICKAXE, Models.HANDHELD);
+            itemModelGenerator.register(URANIUM_SHOVEL, Models.HANDHELD);
+            itemModelGenerator.register(URANIUM_HOE, Models.HANDHELD);
+
+            itemModelGenerator.register(URANIUM_HELMET, Models.GENERATED);
+            itemModelGenerator.register(URANIUM_CHESTPLATE, Models.GENERATED);
+            itemModelGenerator.register(URANIUM_LEGGINGS, Models.GENERATED);
+            itemModelGenerator.register(URANIUM_BOOTS, Models.GENERATED);
+
+            itemModelGenerator.register(URANIUM_INGOT, Models.GENERATED);
+            itemModelGenerator.register(RAW_URANIUM, Models.GENERATED);
+            //itemModelGenerator.register(URANIUM_NUGGET, Models.GENERATED);
+
+
+
+
         }
     }
 

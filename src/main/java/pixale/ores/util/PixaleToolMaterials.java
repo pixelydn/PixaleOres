@@ -7,6 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import pixale.ores.ores.Chromium;
+import pixale.ores.ores.Titanium;
+import pixale.ores.ores.Uranium;
 
 import java.util.function.Supplier;
 
@@ -15,7 +17,8 @@ public enum PixaleToolMaterials implements ToolMaterial {
 
     CHROMIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT)),
     //ALUMINUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Aluminum.ALUMINUM_INGOT)),
-    URANIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Chromium.CHROMIUM_INGOT));
+    URANIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1145, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Uranium.URANIUM_INGOT)),
+    TITANIUM(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 2010, 7.5F, 1.0F, 11, () -> Ingredient.ofItems(Titanium.TITANIUM_INGOT));
 
 
 
